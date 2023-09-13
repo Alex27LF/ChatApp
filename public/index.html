@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat App</title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+  </head>
+  <body>
+    <div id="chat-container">
+      <!-- Caja de Estados -->
+      <div id="status-box">
+        <img src="assets/img/chatbot.png" alt="">
+        <div id="state"></div>
+        <div id="welcome"></div>
+      </div>
+      
+      <!-- Chat -->
+      <div id="chat-window">
+        <div id="date-chat"></div>
+        <div id="output"></div>
+        <div id="actions"></div>
+      </div>
+
+      <!-- Fomrlario de Mensaje -->
+       <div id="form"> <div class="single-input">
+        <input type="text" class="input" id="username" required>
+        <label for="nome">Nombre...</label>
+    </div>
+    <div class="single-input">
+        <input type="text" class="input" id="message" required>
+        <label for="sobrenome">Mensaje...</label>
+    </div>
+    <button id="send"> Enviar&nbsp;<img src="assets/img/enviar.png" alt="">  </button></div>
+    </div>
+
+    <!--socket.io -->
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="js/socket-chat.js"></script>
+  </body>
+</html>
